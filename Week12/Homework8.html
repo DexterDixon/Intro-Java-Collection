@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Conversion Tool</title>
+</head>
+<body>
+    <h1>Conversion Tool</h1>
+    How to convert inches to centimeters?<br><br>
+    1 inch is equal to 2.54 centimeters:<br><br>
+    Click the button "Convert" to perform the calculation<br><br>
+    <form name="conversionMenue" id="fmr1">
+        <label>Enter Inches:</label>
+        <input type="text" name="numberInches"><br>
+        <input type="button" value="Convert to Centimeters" onclick="Convert()">
+    </form>
+    <script>
+        function Convert() {
+            var inches = document.conversionMenue.numberInches.value;
+            var centimeters = inches*2.54;
+            window.alert('The total amount of centimeters is: ' + centimeters);
+
+        }
+    </script>
+</body>
+</html>
